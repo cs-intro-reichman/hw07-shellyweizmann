@@ -15,7 +15,7 @@ public class Binomial {
 		if (k > n)
         return 0;
 
-        if (k == 0 || n == 0)
+        if (k == 0 || k == n) 
         return 1;
 
         return binomial1(n-1, k) + binomial1(n-1, k-1);	
@@ -44,7 +44,7 @@ public class Binomial {
 		   	return 0;
 		}
 		// Another base case
-		if (n == 0 || k == 0) {
+		if (k == 0 || k == n) {
 		   	memo[n][k] = 1; 
 		   	return 1;
 		}
